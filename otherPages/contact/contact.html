@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+
+
+/*  */
+
+.site_logo {
+    width: 180px;
+    /* height: 50px; */
+}
+.nav_text {
+
+    /* transition-timing-function: ease-in; */
+
+  /* Quick on the way out */
+  transition: 0.2s;
+
+  /* Hide thing by pushing it outside by default */
+  /* transform: translateY(130%); */
+    margin-top: 10px;
+    /* border-top: greenyellow solid 3px; */
+    /* visibility: hidden; */
+
+
+}
+.nav_text:hover {
+    /* margin-top: 20px; */
+
+  /* This timing applies on the way IN */
+  transition-timing-function: ease-out;
+
+  /* A litttttle slower on the way in */
+  transition: 0.25s;
+  transform: scale(1.2);
+  
+  /* Move into place */
+  /* transform: translateY(0); */
+    border-left: greenyellow solid 3px;
+    border-right: solid greenyellow 3px;
+    height: 57px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover, .topnav a:focus {
+  /* background-color: #ddd; */
+  color:red;
+  
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*  */
+
+
+
+
+/*  */
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .sidenav a:focus {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*  */
+
+
+/*  */
+@media (max-width: 768px) {
+    .carousel-inner1 .carousel-item1 > div {
+        display: none;
+    }
+    .carousel-inner1 .carousel-item1 > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner1 .carousel-item1.active,
+.carousel-inner1 .carousel-item-next,
+.carousel-inner1 .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner1 .carousel-item-right.active,
+    .carousel-inner1 .carousel-item-next {
+      transform: translateX(50%);
+    }
+    
+    .carousel-inner1 .carousel-item-left.active, 
+    .carousel-inner1 .carousel-item-prev {
+      transform: translateX(-50%);
+    }
+}
+
+.carousel-inner1 .carousel-item-right,
+.carousel-inner1 .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+.img-fluid {
+    height: 200px;
+}
+
+/*  */
+
+.imag {
+    width: 200px;
+    height: 130px;
+}
+
+
+.ing_me {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* TEXT SLIDER */
+
+.hero{
+	height: 100%;
+	width: 100%;
+  font-size: 2em;
+  background: greenyellow;
+	/* background: rgb(255, 255, 251); */
+}
+	.hero-tagline{
+		float: left;
+	}
+	/* .hero-intro{
+		text-align: center;
+	} */
+	.word-slider{
+		height: 1em;
+    position: relative;
+    font-size: 70px;
+		line-height: 1em;
+		margin:  0 .5em;
+		overflow: hidden;
+		float: left;
+		list-style-type: none;
+	}
+		.word-slider>li{
+			text-align: center;
+			-webkit-animation: word-slider 8s ease-in-out infinite;
+			-moz-animation: word-slider 8s ease-in-out infinite;
+			-o-animation: word-slider 8s ease-in-out infinite;
+			animation: word-slider 8s ease-in-out infinite;
+		}
+		@-webkit-keyframes word-slider{
+			0%{
+				-webkit-transform: translate3D(0,0,0);
+			}
+			33%{
+				-webkit-transform: translate3D(0,-100%,0);
+			}
+			66%{
+				-webkit-transform: translate3D(0,-200%,0);
+			}
+			100%{
+				-webkit-transform: translate3D(0,-300%,0);
+			}
+		}
+		@-moz-keyframes word-slider{
+			0%{
+				-moz-transform: translate3D(0,0,0);
+			}
+			33%{
+				-moz-transform: translate3D(0,-100%,0);
+			}
+			66%{
+				-moz-transform: translate3D(0,-200%,0);
+			}
+			100%{
+				-moz-transform: translate3D(0,-300%,0);
+			}
+		}
+		@-o-keyframes word-slider{
+			0%{
+				-o-transform: translateY(0);
+			}
+			33%{
+				-o-transform: translateY(-100%);
+			}
+			66%{
+				-o-transform: translateY(-200%);
+			}
+			100%{
+				-o-transform: translateY(-300%);
+			}
+		}
+		@keyframes word-slider{
+			0%{
+				transform: translate3D(0,0,0);
+			}
+			33%{
+				transform: translate3D(0,-100%,0);
+			}
+			66%{
+				transform: translate3D(0,-200%,0);
+			}
+			100%{
+				transform: translate3D(0,-300%,0);
+			}
+		}
+
+
+	/* .to-top{
+		display: block;
+		height: 50%;
+		margin: 1.25em auto;
+		text-align: center;
+		line-height: 2.5em;
+		cursor: pointer;
+	} */
+/*Utility Classes*/
+.flexbox-container-center{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+}
+.flexbox-item-center{
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+}
+.ie9 .flexbox-container-center{
+	display: table;
+}
+.ie9 .flexbox-item-center{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+/* .inline-block{
+	display: inline-block;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+/* TEXT SLIDER */
+</style>
+
+</head>
+<body>
+
+    
+<br><br><br>
+      <hr>
+
+      <div class="topnav" id="myTopnav">
+          <a href="">
+          <img src="../../assets/logo/logo2.jpg" class="site_logo" alt="">
+        </a>
+          <a href="#home" class="nav_text">
+             <h3>Home</h3> 
+            </a>
+        <a href="#news" class="nav_text">
+            <h3>News</h3>
+        </a>
+        <a href="#contact" class="nav_text">
+            <h3>Contact</h3>
+        </a>
+        <a href="#about" class="nav_text">
+            <h3>About</h3>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+      <br><br><br>
+      <hr>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <div id="main">
+        <h2>Sidenav Push Example</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </div>
+      
+<!--  -->
+
+
+
+
+<!--  -->
+<div class="container text-center my-3">
+    <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel carousel1 slide w-100" data-ride="carousel">
+            <div class="carousel-inner carousel-inner1 w-100" role="listbox">
+                <div class="carousel-item carousel-item1 active">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+
+                            
+                            <img class="img-fluid" src="../../assets/background/study1.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="../../assets/background/study2.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="../../assets/background/happy2.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="../../assets/background/learn.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="../../assets/background/learn1.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="../../assets/background/happy.jpg">
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <h5 class="mt-2">Advances one slide at a time</h5>
+</div>
+<!--  -->
+
+
+
+
+
+
+<!-- HAPPY CUSTOMERS -->
+<h1>Happy Clients</h1>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <!--  -->
+
+    <!--  -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <!-- CARD -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img class="card-img-bottom" src="..." alt="Card image cap">
+          </div>
+          <!-- CARD -->
+
+        <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
+      </div>
+      <div class="carousel-item">
+        <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
+        <!-- CARD -->
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img class="card-img-bottom" src="..." alt="Card image cap">
+          </div>
+          <!-- CARD -->
+      </div>
+      <div class="carousel-item">
+        <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
+        <!-- CARD -->
+        <div class="car d-block w-100 text-center">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img class="card-img-bottom ing_me" src="../../assets/background/study2.jpg" alt="Card image cap">
+          </div>
+          <!-- CARD -->
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!-- HAPPY CUSTOMERS -->
+<br><br><br>
+
+
+
+<!-- TEXT SLIDER -->
+
+<!--[if lt IE 7]>	<body class="ie6">		<![endif]-->
+<!--[if IE 7]>		<body class="ie7">		<![endif]-->
+<!--[if IE 8]>		<body class="ie8">		<![endif]-->
+<!--[if IE 9]>		<body class="ie9">		<![endif]-->
+<!--[if gt IE 9]>	<body class="ie10+">	<![endif]-->
+<!--[if !IE]><!-->					<!--<![endif]-->
+		<section class="hero flexbox-container-center">
+			<article class="flexbox-item-center">
+				<!-- <h1 class="hero-intro">Hey There! I'm Jordan.<br>And</h1> -->
+				<div class="inline-block group">
+				<h1 class="hero-tagline">I Make</h1>
+				<ul class="word-slider">
+					<li>Engaging</li>
+					<li>Delightful</li>
+					<li>Friendly</li>
+					<li>Engaging</li>
+				</ul>
+				<h1 class="hero-tagline">Websites</h1>
+				</div>
+			</article>
+		</section>
+		
+	
+<!-- TEXT SLIDER -->
+<br><br><br>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+    
+
+
+
+
+
+
+    // 
+// /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    // 
+
+
+
+
+    // 
+
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+    // 
+
+
+
+    // 
+
+    $('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel1 .carousel-item1').each(function(){
+    var minPerSlide = 2;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+    // 
+    </script>
+
+
+
+</body>
+</html>

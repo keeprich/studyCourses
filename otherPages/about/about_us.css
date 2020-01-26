@@ -1,0 +1,322 @@
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+  }
+
+
+/* SOCIAL ICON STARTS */
+.social_icons {
+    background-color: rgba(34, 27, 27, 0.932);
+    height: 50px;
+}
+.icons {
+    color:red;
+margin-left: 30px;
+padding-top: 13px;
+
+}
+form {
+    padding-bottom: 10%
+}
+
+/* hidding and showing social icons starts */
+.social_icons{
+    display: block;
+}
+
+@media (max-width: 380px) 
+{
+    .social_icons
+    {
+        display: none;
+    }
+} 
+
+/* hidding and showing social icons ends */
+
+/*SOCIAL ICON ENDS  */
+
+/* NAVIGATION STARTS */
+/* 
+
+
+.nav_section{
+  background-color: rgba(245, 6, 6, 0);
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.808) , red); */
+
+ 
+
+  
+.front_img {
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/02/12/59/narrative-794978__340.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .logo
+   {
+      /* width: 120px; */
+      height: 50px;
+      border-radius: 50px;
+      background-color: red;
+  }
+  
+  .brand_name {
+    color: rgb(43, 60, 76)
+  }
+  
+  .brand_name1 {
+    color: red;
+  }
+  
+  #nav-lin {
+    color:red;
+    transition: transform .8s; /* Animation */
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  
+  
+  #nav-lin:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px #000000be;
+  
+  }
+  
+  #nav-link {
+    color:red;
+    transition: transform .7s; /* Animation */
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  
+  #nav-link:hover {
+  background-color: rgba(205, 60, 50, 0.514);
+  border-radius: 10px;
+  transform: scale(1.22);
+  
+  }
+  
+  /* .maqu {
+    padding-left: 50px;
+  } */
+  
+  .open_nav {
+    text-align: right;
+    margin-right: 20px;
+    transition: transform .7s; /* Animation */
+  
+  }
+  
+  .open_nav:hover {
+    transform: scale(1.4);
+    color: rgb(255, 110, 0);
+  }
+  
+  .overlay1 {
+      height: 100%;
+      width: 100%;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+    }
+    
+    .overlay-content1 {
+      position: relative;
+      top: 20%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay1 a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 30px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay1 a:hover, .overlay1 a:focus {
+      color: rgb(255, 110, 0);
+  
+    }
+  
+    .menu_link {
+      /* background-color: rgba(255, 111, 0, 0.911); */
+      transition: transform .7s; /* Animation */
+      /* margin-top: 2px ; */
+  
+    }
+  
+    .menu_link:hover {
+      transform: scale(1.1);
+  
+    }
+    
+    .overlay1 .closebtn1 {
+      position: absolute;
+      top: 50px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay1 a {font-size: 20px}
+      .overlay1 .closebtn1 {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+
+/* .nav_section{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.808) , red);
+
+ 
+
+} */
+
+
+
+.logo
+ {
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.brand_name {
+  color: rgb(43, 60, 76)
+}
+
+.brand_name1 {
+  color: red;
+} */
+/* NAVIGATION ENDS */
+
+
+/* ABOUT US BODY START */
+
+
+
+.abt_us1 {
+  padding:40px;
+  /* background-color: tomato; */
+}
+
+.abt_head {
+  color: rgb(255, 110, 0);
+  text-align: center;
+  padding: 20px;
+  /* font-size: 40px; */
+  font-weight: 900;
+}
+/* ABOUT US BODY ENDS */
+
+
+
+/* <!-- FOOTER STARTS --> */
+
+.footer_img {
+  margin-top: 80px;
+  padding: 30px 30px 0px 30px;
+  background-color: black;
+  /* background-image: url(../assets/logo/me.png); */
+  /* background-repeat: no-repeat; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  /* background-size: 100vw; */
+  /* height: 30vw; */
+
+}
+.addre_st {
+  color: rgb(255, 110, 0);
+  /* padding-top: 15px; */
+}
+.footer_hr {
+border: solid 2px red;
+width: 100%;  
+}
+
+.marq_foot {
+  color: #FF9F55;
+}
+
+.foot_link5, a{
+  color: rgb(255, 110, 0);
+  /* transition: transform .8s;   */
+
+}
+
+ .foot_link5, a:hover{ 
+  text-decoration: none;
+  color: rgb(255, 110, 0);
+  /* transform: scale(1.1); */
+
+}
+
+#fot_head {
+  color: silver;
+}
+
+#icons {
+  width: 200px;
+  height: 200px;
+  color: rgb(255, 110, 0);
+margin-left: 30px;
+padding-top: 13px;
+transition: transform .2s;
+
+}
+#icons:hover {
+  transform: scale(1.5); 
+
+}
+
+
+/* .footer_img {
+  margin-top: 80px;
+  background-image: url(../../assets/logo/me.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: 100vw;
+  height: 40vw;
+
+}
+.footer_txt {
+  font-size: 3vw;
+} */
+
+
+.mail_tel {
+margin-top: 20px;
+}
+
+.mail_tel_col {
+  color: white;
+  /* font-weight: 700; */
+}
+/* <!-- FOOTER ENDS --> */
+
+
+
+/*  */
+

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- FONTAWSOM START -->
+<script src="https://kit.fontawesome.com/b43d08924a.js"></script>
+<!-- FONTAWSON ENDS -->
+
+    <style>
+
+
+.our_serv {
+     /* color: rgb(255, 110, 0,); */
+     border-radius: 30px 0px 30px 0px;
+
+     background-color: rgba(245, 243, 241, 0.836);
+    height: 750px;
+    /* border-radius: 20px; */
+    box-shadow: 4px 4px 8px gray;
+}
+
+.text-deco {
+    text-align: left;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner1 .carousel-item1 > div {
+        display: none;
+    }
+    .carousel-inner1 .carousel-item1 > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner1 .carousel-item1.active,
+.carousel-inner1 .carousel-item-next,
+.carousel-inner1 .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner1 .carousel-item-right.active,
+    .carousel-inner1 .carousel-item-next {
+      /* transform: translateX(33.333%); */
+            transform: translateX(50%);
+
+    }
+    
+    .carousel-inner1 .carousel-item-left.active, 
+    .carousel-inner1 .carousel-item-prev {
+      /* transform: translateX(-33.333%); */
+            transform: translateX(-50%);
+
+    }
+}
+
+.carousel-inner1 .carousel-item-right,
+.carousel-inner1 .carousel-item-left{ 
+  transform: translateX(0);
+}
+.service_head {
+    margin-bottom: 50px;
+}
+
+.icon-fluid {
+    height: 150px;
+color: rgb(255, 110, 0);
+    border-radius: 50%;
+    width: 200px;
+    /* clip-path: polygon(0% 100%, 100% 100%, 0% 0%); */
+
+}
+
+.serv_colo {
+    color: rgb(255, 110, 0);
+}
+
+.hea {
+    font-weight: 900;
+padding-top: 30px;}
+
+.card-tit{
+    font-weight: lighter;
+    font-size: 900;
+    color: red;
+    padding-bottom: 30px;
+
+}
+
+.borde {
+ background-color: rgba(243, 1, 1, 0.158);
+ color: red;
+ width: 30px;
+ height: 30px;
+transition: transform .8s;
+ /* padding-right: 70px; */
+ border-radius: 10px;
+}
+
+.ser_pe {
+    color: silver;
+text-align: center;
+padding: 10px;
+}
+
+.borde:hover{
+transform: scale(1.3);
+}
+</style>
+
+</head>
+<body>
+
+<!--  -->
+<section class="our_serv"> 
+<div class="container text-center my-3">
+    <h1 class="font-weight-ligh hea"><span>Our</span><span class="serv_colo"> Services</span> </h1>
+    <p class="ser_pe">At BSI Recruitment and Training Limites, we pride ourseves for providing great and specialist services which are designed, specifcally to meeet the needs and requirments of clients</p>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner carousel-inner1 w-100" role="listbox">
+                <div class="carousel-item carousel-item1 active">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h3 class="card-tit">Recruitment</h3>
+
+                            <h5>
+                                <i class="fas fa-user-md fa-5x icon-fluid"></i>
+                            </h5>
+                            <!-- <img class="icon-fluid" src="../../assets/background/study1.jpg"> -->
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <p class="card-text text-deco">
+                                    We are a trusted provider of short-term and permanent staffing solutions of Care Assistants and Support Workers to nursing homes, residential homes, care agencies, domiciliary care providers.
+
+                                </p>
+                                <!-- <a href="#" class="btn btn-primary">vfv</a> -->
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h3 class="card-tit">Healthcare Training</h3>
+
+                            <h5>
+                                <i class="fas fa-graduation-cap fa-5x icon-fluid"></i>
+                            </h5>
+                            <!-- CARD -->
+                            <div class="card-body">
+                                <p class="card-text text-deco">
+                                    We are an Approved Training Centre and Accredited Provider of mandatory and statutory care training to health and social care organisations, recruitment agencies and health and social care professionals.
+                                </p>
+                                <!-- <a href="#" class="btn btn-danger">Go somewhere</a> -->
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h3 class="card-tit">Social Care</h3>
+
+                            <h5>
+                                <i class="fas fa-hand-holding-heart fa-5x icon-fluid"></i>
+                            </h5>
+                                                        <!-- CARD -->
+                            <div class="card-body">
+                                <p class="card-text text-deco">
+                                    We are a provider of 16+ semi-independent supported accommodation provision for children and young people with extreme behavioural difficulties and working with them towards their independence.
+
+                                </p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h3 class="card-tit">Education Consultancy</h3>
+
+                            <h5>
+                                <i class="fas fa-handshake fa-5x icon-fluid"></i>
+                            </h5>
+                                            <!-- CARD -->
+                            <div class="card-body">
+                                <p class="card-text text-deco">
+                                    We provide education support and recruitment services to Colleges and Adult Learning Centres for government-funded vocational qualifications in health and social care.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            <!-- CARD -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h5 class="card-title">Consultancy Cervices</h5>
+
+                            <h5>
+                                <i class="fas fa-handshake fa-5x icon-fluid"></i>
+                            </h5>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="carousel-item carousel-item1">
+                    <div class="col-md-6">
+                        <div class="car card-body">
+                            <h5 class="card-title">Consultancy Cervices</h5>
+
+                            <h5>
+                                <i class="fas fa-handshake fa-5x icon-fluid"></i>
+                            </h5>         
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dar borde border-dar rounded-circl" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dar borde border-dar rounded-circl" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+<!--  -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+
+
+    $('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item1').each(function(){
+    var minPerSlide = 2;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+    </script>
+
+
+
+</body>
+</html>
